@@ -1,0 +1,173 @@
+/* Global Styles */
+body {
+    font-family: 'Segoe UI', Roboto, Arial, sans-serif;
+    background-color: #f5f7fa;
+    color: #2d3436;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+/* Container Styling */
+.container {
+    max-width: 450px;
+    margin: 60px auto;
+    background: #ffffff;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.08);
+    transition: box-shadow 0.3s ease;
+}
+
+.container:hover {
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.12);
+}
+
+/* Headings */
+h1, h3 {
+    color: #2c3e50;
+    text-align: center;
+    margin-bottom: 24px;
+    font-weight: 700;
+}
+
+h1 {
+    font-size: 28px;
+}
+
+h3 {
+    font-size: 20px;
+    color: #636e72;
+}
+
+/* Money Display */
+.money {
+    font-size: 26px;
+    font-weight: 700;
+    margin: 10px 0;
+}
+
+.money.plus {
+    color: #27ae60;
+}
+
+.money.minus {
+    color: #e74c3c;
+}
+
+/* Button Styling */
+.btn {
+    background-color: #0984e3;
+    color: #ffffff;
+    border: none;
+    padding: 14px;
+    cursor: pointer;
+    width: 100%;
+    margin-top: 20px;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: 600;
+    text-transform: uppercase;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #74b9ff;
+}
+
+/* List Styling */
+#list {
+    list-style: none;
+    padding: 0;
+    margin-top: 30px;
+}
+
+#list li {
+    background-color: #f0f2f5;
+    padding: 16px;
+    border-left: 5px solid;
+    margin-bottom: 12px;
+    border-radius: 6px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: background-color 0.3s ease;
+}
+
+#list li.plus {
+    border-color: #27ae60;
+}
+
+#list li.minus {
+    border-color: #e74c3c;
+}
+
+#list li:hover {
+    background-color: #dfe6e9;
+}
+
+/* Delete Button Styling */
+.delete-btn {
+    background-color: transparent;
+    border: none;
+    color: #e74c3c;
+    font-size: 20px;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+.delete-btn:hover {
+    color: #c0392b;
+}
+
+/* Input Fields */
+input[type="text"],
+input[type="number"] {
+    width: calc(100% - 24px);
+    padding: 14px;
+    margin-bottom: 18px;
+    border: 1px solid #dfe6e9;
+    border-radius: 8px;
+    font-size: 16px;
+    transition: border-color 0.3s ease;
+}
+
+input[type="text"]:focus,
+input[type="number"]:focus {
+    border-color: #0984e3;
+    outline: none;
+}
+
+/* Income and Expense Overview */
+#income-expense {
+    display: flex;
+    justify-content: space-between;
+    margin: 30px 0;
+}
+
+#income-expense div {
+    background-color: #ecf0f1;
+    padding: 20px;
+    border-radius: 8px;
+    width: 48%;
+    text-align: center;
+    transition: background-color 0.3s ease;
+}
+
+#income-expense div:hover {
+    background-color: #dfe6e9;
+}
+
+#income-expense h3 {
+    margin: 0 0 12px;
+    font-size: 18px;
+    color: #7f8c8d;
+    font-weight: 600;
+}
+
+#income-expense p {
+    margin: 0;
+    font-size: 22px;
+    font-weight: 700;
+    color: #2d3436;
+}
